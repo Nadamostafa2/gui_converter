@@ -75,6 +75,7 @@ namespace WindowsFormsApp2
                 z += total.ToString(); // lw est5dmt += bygib error
                 w = w - 3; // m4 bt5lih y4t3"l
             }
+
             char[] reversed = z.Reverse().ToArray();
             z = "";
             for (int i = 0; i < reversed.Length; i++) z += reversed[i];
