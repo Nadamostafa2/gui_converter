@@ -38,26 +38,44 @@ namespace WindowsFormsApp2
 
         private void BTN2_Click(object sender, EventArgs e)
         {
+            try { 
             Deciimal d = new Deciimal(TxtDecimal.Text);
             TxtBinary.Text = d.convert_binary();
             TxtOctal.Text = d.convert_Octal();
             TxtHexa.Text = d.convert_Hexa();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void BTN3_Click(object sender, EventArgs e)
         {
+            try { 
             Octal o = new Octal(TxtOctal.Text);
             TxtDecimal.Text = o.convert_decimal().ToString();
             TxtBinary.Text = o.convert_binary();
             TxtHexa.Text = o.convert_Hexadecimal();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void BTN4_Click(object sender, EventArgs e)
         {
+            try { 
             hexadecimal h = new hexadecimal(TxtHexa.Text);
             TxtDecimal.Text = h.convert_decimal().ToString();
             TxtBinary.Text = h.convert_binary();
             TxtOctal.Text = h.convert_Octal();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
     class Binary
@@ -74,9 +92,7 @@ namespace WindowsFormsApp2
                         continue;
 
                     else{
-                        //MessageBox.Show("this number is refused");
-                        //f = false;
-                        //break;
+                        
                         throw new Exception("this number is refused");
                     }
                 }
@@ -163,31 +179,30 @@ namespace WindowsFormsApp2
     }
 
     class Octal
-    {
+    { //TODO
         private string octal;
         public Octal(String s)
         {
             bool f = true;
             char[] chararray = { '0', '1', '2', '3', '4', '5', '6', '7' };
-            int i = 0;
+            
             foreach (char c in chararray)
             {
                 if (s.Contains(c))
                 {
                     continue;
                 }
-                /*else
+                else
                 {
-                    MessageBox.Show("this number is refused");
-                    f = false;
-                    break;
-                }*/
+                    throw new Exception("this number is refused");
+                }
             }
             if (f)
                 octal = s;
         }
         public string convert_binary()
         {
+            //TODO 
             //bytl3 ma2lob
             int Reminder;
             string oct = " ";
@@ -288,19 +303,17 @@ namespace WindowsFormsApp2
         {
             bool f = true;
             char[] chararray = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
-            int i = 0;
+            
             foreach (char c in chararray)
             {
                 if (s.Contains(c))
                 {
                     continue;
                 }
-                /*else
+                else
                 {
-                    MessageBox.Show("this number is refused");
-                    f = false;
-                    break;
-                }*/
+                    throw new Exception("this number is refused");
+                }
             }
             if (f)
                 hexa = s;
@@ -393,7 +406,22 @@ namespace WindowsFormsApp2
         private string deciimal;
         public Deciimal(String s)
         {
+            char[] chararray = { '0', '1', '2', '3', '4', '5', '6', '7','8','9' };
+
+            foreach (char c in chararray)
+            {
+                if (s.Contains(c))
+                {
+                    continue;
+                }
+                else
+                {
+                    throw new Exception("this number is refused");
+                }
+                
+            }
             deciimal = s;
+
         }
         public string convert_binary()
         {
