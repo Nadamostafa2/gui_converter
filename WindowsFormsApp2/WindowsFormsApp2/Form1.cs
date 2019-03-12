@@ -296,6 +296,7 @@ namespace WindowsFormsApp2
         }
 
     }
+    //TODO
     class hexadecimal
     {
         private string hexa;
