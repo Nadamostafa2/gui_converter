@@ -37,22 +37,25 @@
             this.TxtHexa = new System.Windows.Forms.TextBox();
             this.LabDici = new System.Windows.Forms.Label();
             this.TxtDecimal = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BTN
             // 
             this.BTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN.Location = new System.Drawing.Point(285, 452);
+            this.BTN.Location = new System.Drawing.Point(617, 66);
             this.BTN.Name = "BTN";
-            this.BTN.Size = new System.Drawing.Size(256, 51);
+            this.BTN.Size = new System.Drawing.Size(180, 42);
             this.BTN.TabIndex = 0;
-            this.BTN.Text = "Done";
+            this.BTN.Text = "Convert it";
             this.BTN.UseVisualStyleBackColor = true;
             this.BTN.Click += new System.EventHandler(this.BTN_Click);
             // 
             // TxtBinary
             // 
-            this.TxtBinary.Location = new System.Drawing.Point(339, 82);
+            this.TxtBinary.Location = new System.Drawing.Point(265, 66);
             this.TxtBinary.Multiline = true;
             this.TxtBinary.Name = "TxtBinary";
             this.TxtBinary.Size = new System.Drawing.Size(333, 42);
@@ -62,7 +65,7 @@
             // 
             this.LabBinary.AutoSize = true;
             this.LabBinary.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabBinary.Location = new System.Drawing.Point(169, 86);
+            this.LabBinary.Location = new System.Drawing.Point(95, 70);
             this.LabBinary.Name = "LabBinary";
             this.LabBinary.Size = new System.Drawing.Size(116, 38);
             this.LabBinary.TabIndex = 2;
@@ -72,7 +75,7 @@
             // 
             this.LabOctal.AutoSize = true;
             this.LabOctal.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabOctal.Location = new System.Drawing.Point(169, 176);
+            this.LabOctal.Location = new System.Drawing.Point(95, 160);
             this.LabOctal.Name = "LabOctal";
             this.LabOctal.Size = new System.Drawing.Size(99, 38);
             this.LabOctal.TabIndex = 4;
@@ -80,7 +83,7 @@
             // 
             // TxtOctal
             // 
-            this.TxtOctal.Location = new System.Drawing.Point(339, 172);
+            this.TxtOctal.Location = new System.Drawing.Point(265, 156);
             this.TxtOctal.Multiline = true;
             this.TxtOctal.Name = "TxtOctal";
             this.TxtOctal.Size = new System.Drawing.Size(333, 43);
@@ -90,7 +93,7 @@
             // 
             this.LabHexa.AutoSize = true;
             this.LabHexa.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabHexa.Location = new System.Drawing.Point(169, 263);
+            this.LabHexa.Location = new System.Drawing.Point(95, 247);
             this.LabHexa.Name = "LabHexa";
             this.LabHexa.Size = new System.Drawing.Size(98, 38);
             this.LabHexa.TabIndex = 6;
@@ -98,7 +101,7 @@
             // 
             // TxtHexa
             // 
-            this.TxtHexa.Location = new System.Drawing.Point(339, 259);
+            this.TxtHexa.Location = new System.Drawing.Point(265, 243);
             this.TxtHexa.Multiline = true;
             this.TxtHexa.Name = "TxtHexa";
             this.TxtHexa.Size = new System.Drawing.Size(333, 43);
@@ -108,7 +111,7 @@
             // 
             this.LabDici.AutoSize = true;
             this.LabDici.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabDici.Location = new System.Drawing.Point(169, 350);
+            this.LabDici.Location = new System.Drawing.Point(95, 334);
             this.LabDici.Name = "LabDici";
             this.LabDici.Size = new System.Drawing.Size(142, 38);
             this.LabDici.TabIndex = 8;
@@ -116,17 +119,53 @@
             // 
             // TxtDecimal
             // 
-            this.TxtDecimal.Location = new System.Drawing.Point(339, 346);
+            this.TxtDecimal.Location = new System.Drawing.Point(265, 330);
             this.TxtDecimal.Multiline = true;
             this.TxtDecimal.Name = "TxtDecimal";
             this.TxtDecimal.Size = new System.Drawing.Size(333, 43);
             this.TxtDecimal.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(617, 332);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(180, 42);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Convert it";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.BTN2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(617, 243);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(180, 42);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Convert it";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.BTN4_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(617, 158);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(180, 42);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "Convert it";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.BTN3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 573);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.LabDici);
             this.Controls.Add(this.TxtDecimal);
             this.Controls.Add(this.LabHexa);
@@ -154,6 +193,9 @@
         private System.Windows.Forms.TextBox TxtHexa;
         private System.Windows.Forms.Label LabDici;
         private System.Windows.Forms.TextBox TxtDecimal;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 
